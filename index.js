@@ -21,9 +21,7 @@ function exactMatch(list_of_drivers, attribute_match) {
 }
 
 function exactMatchToList(list_of_drivers, attribute, value) {
-  return list_of_drivers.filter(function(driver) {
-    return driver[attribute] === value;
-  }).map(function(driver) {
+  return exactMatch.map(function(driver) {
     return driver.name;
   });
 }
