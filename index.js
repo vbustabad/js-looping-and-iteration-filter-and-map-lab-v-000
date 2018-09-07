@@ -20,7 +20,7 @@ function exactMatch(list_of_drivers, attribute_match) {
   })
 }
 
-function exactMatchToList(list_of_drivers, attribute, value) {
+function exactMatchToList(list_of_drivers, attribute_match) {
   return exactMatch(list_of_drivers, attribute_match).map(function(driver) {
     return driver.name;
   });
