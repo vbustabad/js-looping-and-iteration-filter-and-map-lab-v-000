@@ -20,7 +20,7 @@ function exactMatch(list_of_drivers, query) {
     for (const key in list_of_drivers) {
       driver[key] = query[key];
     }
-    return driver[attribute] === 'value';
+    return driver[key] === 'value';
   })
 }
 
